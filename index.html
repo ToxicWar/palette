@@ -8,13 +8,16 @@
     <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
     <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
     <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/palette.css">
 
     <script type="text/javascript" src="javascripts/modernizr.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
+    <script src="javascripts/palette.js"></script>
     <script type="text/javascript">
       $(document).ready(function () {
-        $('#main_content').headsmart()
+        $('#main_content').headsmart();
+        $('#examplePalette').palette();
       })
     </script>
     <title>Palette by ToxicWar</title>
@@ -47,10 +50,6 @@
 
       <section id="main_content">
         <h1>palette.js</h1>
-
-<p>Copyright (c) 2012, ToxicWar<br>
-Liscensed under the MIT License (MIT-LICENSE.txt)<br><a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a></p>
-
 <h2>Quick Start</h2>
 
 <p>To get started, just add the palette js and css file to your page, and created textfield:</p>
@@ -67,6 +66,12 @@ Liscensed under the MIT License (MIT-LICENSE.txt)<br><a href="http://www.opensou
 
 &lt;input type="text" id="examplePalette" /&gt;
 </code></pre>
+<br/>
+<input type="text" id="color">
+    <button id="button1" onclick="$().addColor(color.value)">Add color</button><br/>
+    <input type="text" id="changeColor">
+    <button id="button2" onclick="$().changeColor(changeColor.value)">Change color</button><br/>
+<input type="text" id="examplePalette" />
       </section>
 
       <footer>
