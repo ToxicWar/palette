@@ -1,0 +1,26 @@
+{
+    "name": "palette",
+    "title": "jQuery Palette",
+    "description": "jQuery plugin for color palette.",
+    "keywords": [
+        "color",
+        "palette"
+    ],
+    "version": "0.1.0",
+    "author": {
+        "name": "Anton Larkin",
+        "email": "toxicwar94@yandex.ru"
+    },
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "bugs": "https://github.com/ToxicWar/palette/issues",
+    "homepage": "http://toxicwar.github.io/palette/",
+    "download": "https://github.com/ToxicWar/palette",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
